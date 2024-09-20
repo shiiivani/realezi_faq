@@ -230,6 +230,7 @@ ul {
     overflow: hidden;
     background: #ECEFF3;
     border-radius: 42px;
+    height: 60px;
 }
 
 .second-navbar {
@@ -244,14 +245,16 @@ ul {
     align-items: center;
     padding-left: 0;
     margin: 0;
-    padding: 0;
     white-space: nowrap;
     overflow-x: auto;
     scroll-behavior: smooth;
+    width: 95%;
 }
 
 .second-navbar li {
-    padding: 7px 20px;
+    flex-grow: 1;
+    text-align: center;
+    padding: 8px 0px;
     color: #466D86;
     border-radius: 20px;
     margin: 10px;
@@ -323,6 +326,18 @@ ul {
 .note-card .card-body {
     font-size: 0.81em;
     font-weight: 500;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button {
+    border: 1px solid #4875D4;
+    font-size: 14px;
+    color: #4875D4;
+    padding: 12px 15px;
 }
 
 /* footer styles */
@@ -560,19 +575,6 @@ footer {
 
     .accordion-content {
         display: none;
-        padding: 10px 10px;
-    }
-
-    .accordion-toggle {
-        cursor: pointer;
-        border: 0.5px solid #4875D4;
-        background-color: white;
-        width: 100%;
-        padding: 6px 10px;
-        border-radius: 8px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .accordion-content {
@@ -585,5 +587,31 @@ footer {
 
     .secondary-text-color {
         font-size: 0.8em;
+    }
+
+    .accordion-body ul {
+        font-size: 0.9em;
+    }
+
+    .accordion-body {
+        padding: 10px 10px 10px 30px;
+    }
+
+    .second-navbar-container {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .faq-question-text {
+        font-size: 1em;
+    }
+
+    .secondary-text-color {
+        font-size: 0.8em;
+    }
+
+    .second-navbar-container {
+        width: 100%;
+        border-radius: 0px;
     }
 }
