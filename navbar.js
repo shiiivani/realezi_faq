@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.set([slideLine, hoverLine], {
       height: 30,
       position: "absolute",
-      bottom: 10,
+      bottom: 11,
       borderRadius: "15px",
       zIndex: 1,
       transformOrigin: "left center",
